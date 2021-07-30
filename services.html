@@ -9,6 +9,7 @@ Date: 7/25/2021
 <head>
 
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>PuppyGroom: Services</title>
 
@@ -21,30 +22,34 @@ Date: 7/25/2021
         </header>
 
         <nav>
-          <p>
-            <a href="index.html"> Home</a> &nbsp; &#9632; &nbsp;
-            <a href="services.html"> Services </a>&nbsp; &#9632; &nbsp;
-            <a href="reservations.html"> Reservations </a>&nbsp; &#9632; &nbsp; 
-            <a href="contact.html"> Contact Us </a>
-          </p> 
+          <ul>
+            <li><a href="index.html"> Home</a> </li>
+            <li><a href="services.html"> Services </a></li>
+            <li><a href="reservations.html"> Reservations</li> 
+            <li><a href="contact.html"> Contact Us </a></li>
+          </ul> 
         </nav>
 <!-- Content and media goes in this section -->
         <main>
 
-          <div id="services">
+          <div class="clearfix">
 
-            <h3>Grooming</h3>
-            <img src="/groom/images/dog-nail-trim.jpg" alt="person trimming a dogs claw" height="300" width="500">
-              <ul>
+            <h3 id="services">Grooming</h3>
+            <img  class="img1" src="/groom/images/dog-nail-trim.jpg" alt="person trimming a dogs claw"  >
+            
+              <ul id="services">
                 <li>Relaxing Bath</li>
                 <li>Mani/Pedi</li>
                 <li>Luxury Bath</li>
               </ul>
 
-              <h3>Birthday parties</h3>
-              <img src="/groom/images/birthday-dog.jpg" alt="person trimming a dogs claw" height="300" width="500">
+          </div>
+          <div class="clearfix">
 
-              <ul>
+              <h3  id="services">Birthday parties</h3>
+              <img class="img1" src="/groom/images/birthday-dog.jpg" alt="person trimming a dogs claw" h>
+
+              <ul id="services">
                 <li>Birthday Cake</li>
                 <li>Birthday Party</li>
                 <li>Treats</li>
