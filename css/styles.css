@@ -6,7 +6,7 @@ Date: 7/30/2021
 
 
 /*CSS Reset*/
-body, header, nav, main, footer, img, h1, h3
+body, header, nav, main, footer, img, h1, h3, ul
 {
 margin: 0;
 padding: 0;
@@ -29,6 +29,37 @@ img
   max-width: 100%;
 }
 
+ /*Style rules for mobile viewport.*/
+
+ /*Style rules to show mobile class and hide tab-desk class.*/
+
+.mobile
+{
+  display: block;
+}
+.tab-desk
+{
+  display: none;
+}
+
+/*Style rules for header area*/
+
+.mobile h1, .mobile h3
+{
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1
+{
+  font-family: 'Exo 2', sans-serif;
+}
+
+.mobile h3
+{
+  font-family: 'Roboto', sans-serif;
+}
+
 /*Style rules for navigation area*/
 
 nav
@@ -45,9 +76,9 @@ nav ul
 
 nav li
 {
-  display: inline-block;
+  display: block;
   font-size: 1.25em;
-  font-family: Geneva, Arial, sans-serif;
+  font-family:'Exo 2', sans-serif;
   font-weight: bold;
 }
 
@@ -60,6 +91,9 @@ nav li a
   padding-left: 1em;
   padding-right: 1em;
   text-decoration: none;
+  border-top: 0.5px ;
+  border-top-color: #ff99ff ;
+  border-top-style: solid ;
 }
 
 
@@ -72,6 +106,8 @@ padding-left: 2%;
 padding-right: 2%;
 padding-bottom: 5%;
 padding-top: 5%;
+font-weight: bold;
+
 }
 
 .img1
@@ -102,5 +138,34 @@ footer a
   color: #ff99ff;
   text-decoration: none;
   font-weight: bold;
-}v
+}
+
+/*style rules for pictures*/
+
+.round
+{
+  border-radius: 7px;
+  width: 95%;
+  height: 95%;
+}
+
+/*style for mobile telephone*/
+
+.tel-link
+{
+  background-color: #ffffff;
+  padding: 2%;
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tel-link a
+{
+  color: #ff99ff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
