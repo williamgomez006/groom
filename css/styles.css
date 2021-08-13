@@ -27,6 +27,11 @@ img
 {
   display: block;
   max-width: 100%;
+  
+}
+
+main{
+  background-color: #ff99ff;
 }
 
  /*Style rules for mobile viewport.*/
@@ -98,7 +103,7 @@ nav li a
 
 
 
-#services
+.services
 {
 text-decoration: none;
 list-style-type: none;
@@ -108,17 +113,17 @@ padding-bottom: 5%;
 padding-top: 5%;
 font-weight: bold;
 
+
+
 }
 
 .img1
 {
  float: left;
+ background-color: #ff99ff;
 }
 
-.clearfix
-{
-  overflow: auto;
-}
+
 /*Style rules for footer content*/
 
 footer
@@ -147,6 +152,7 @@ footer a
   border-radius: 7px;
   width: 95%;
   height: 95%;
+  background-color: #ff99ff;
 }
 
 /*style for mobile telephone*/
@@ -167,5 +173,117 @@ footer a
   color: #ff99ff;
   text-decoration: none;
   font-weight: bold;
+}
+
+@media screen and (min-width: 550px), print {
+  
+/* Tablet Viewport: Show tab-desk class, hide mobile class */  
+.tab-desk {
+    display: block;
+} 
+.mobile {
+    display: none;  
+} 
+/* Tablet Viewport: Style rule for header content */     
+span.tab-desk {
+    display: inline;
+}
+
+
+/*Tablet Viewport: Style rules for nav area */
+
+nav li{
+  
+  display: inline-block;
+  font-size: 1.5em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-right: solid 2px #ff99ff;
+  border-bottom:solid 2px#ff99ff ;
+  border-left: solid 2px #ff99ff;
+  border-top: solid 2px #ff99ff;
+}
+
+
+nav li a{
+  padding-top: 0.25em;
+  padding-bottom: 0.25em ;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+/*Tablet Viewport: Style rule for map*/
+.map{
+  width: 500px;
+  height: 450px;
+}
+
+  #grooming, #birthday{
+    width: 45%;
+    float:left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+
+  }
+
+
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+  /*Desktop Viewport: Style rule for header*/
+
+  header{
+    padding:2%;
+  }
+
+  /*Desktop Viewport: Style rules for nav area*/
+  nav li a{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em ;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-top: none;
+  }
+  nav li a:hover{
+    color: #fff;
+    background-color: #ff99ff;
+  }
+  
+  /*Desktop Viewport: Style rules for main content*/
+  #info ul{
+    margin-left: 5%;
+  }
+
+
+  main h3{
+    font-size: 1.5em;
+    margin-bottom: 2%;
+  }
+
+
+  #grooming, #birthday{
+    width: 45%;
+    float:left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 2%;
+    margin-left: 2%;
+
+  }
+
+
+}
+
+/*Media Query for Print*/
+@media print{
+  body{
+    background-color: #fff;
+    color: #000;
+  }
 }
 
